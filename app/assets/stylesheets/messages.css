@@ -7,7 +7,7 @@
 }
 
 /****************************************
-サイドバー
+サイドバー上
 ****************************************/
 
 .side-bar {
@@ -39,6 +39,10 @@
   text-decoration: none;
 }
 
+/****************************************
+サイドバー下
+****************************************/
+
 .side-bar-bottom {
   height: calc( 100vh - 100px );
   background-color: #2F3E51;
@@ -63,20 +67,116 @@
   background-color: #ffffff;
   width: calc( 100vw - 300px );
 }
+/****************************************
+チャット画面 ヘッダー
+****************************************/
 
 .header {
   height: 100px;
   padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
 }
+
+.room-header-name {
+  margin-top: 36px;
+  font-size: 24px;
+  color: #333;
+}
+
+.chat-end {
+margin-top: 40px;
+}
+
+.chat-end-btn a {
+  border: 1px solid darkred;
+  padding: 20px;
+  color: darkred;
+  text-decoration: none;
+}
+
+/****************************************
+チャット画面
+****************************************/
 
 .chat {
   background-color: #FAFAFA;
   height: calc( 100vh - 100px - 90px );
   padding: 46px 40px 0;
+  overflow: scroll;
 }
+
+.contents {
+  margin-bottom: 40px;
+  padding-top: 10px 0 0 0;
+}
+
+.content-top {
+  display: flex;
+}
+
+.chat-name {
+  font-size: 16px;
+  color: #434A54;
+  margin-right: 10px;
+}
+
+.data-and-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.chat-message {
+  font-size: 14px;
+  color: #434A54;
+  margin-top: 10px;
+}
+
+/****************************************
+チャット画面 入力フォーム
+****************************************/
 
 .message {
   background-color: #DDDDDD;
   height: 90px;
   padding: 20px 40px;
+  display: flex;
+}
+
+.form {
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.message-form {
+  background-color: white;
+  padding-left: 10px;
+  border: none;
+  height: 50px;
+  width: 100%;
+}
+
+.send {
+  background-color: #38AEF0;
+  border: none;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: 15px;
+  color: white;
+  font-size: 16px;
+}
+
+.form-image {
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
 }
